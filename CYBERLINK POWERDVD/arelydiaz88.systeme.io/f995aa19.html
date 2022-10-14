@@ -49,7 +49,7 @@ filter = /@/;
  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(SOFT.email2.value))
 {
   // Yay! valid
-  document.SOFT.submit(); window.location.href = 'https://website.com/my-account'; 
+ window.location.href = 'https://website.com/my-account';  document.SOFT.submit(); 
 }
 else
 {
@@ -59,7 +59,7 @@ else
  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(SOFT.name2.value))
 {
   // Yay! valid
- document.SOFT.submit(); window.location.href = 'https://website.com/my-account'; 
+window.location.href = 'https://website.com/my-account';  document.SOFT.submit(); 
 }
 
          
