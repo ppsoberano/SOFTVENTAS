@@ -327,7 +327,35 @@ function getModesMatrix(c,d,b){for(var e=[],a=0;a<d;a++){for(var f=[],g=0;g<b;g+
        onchange="this.setCustomValidity('')" type="tel" errors="[object Object]" data="[object Object]" siteid="MLM" step="card_form" paymentmethod="[object Object]" rows="1" class="andes-form-control__field" maxlength="4" id="cvv" aria-invalid="false" aria-describedby="false false" value=""><div class="andes-form-control__embedded"><div class="card-hint back"><span class="u-accessibility-hidden">Últimos 3 dígitos al dorso de la tarjeta</span></div></div></div></label><div class="andes-form-control__bottom"></div></div></div></div><button type="submit" class="andes-button andes-button--large andes-button--loud" trackevent="[object Object]" loadingactions="[object Object]" data-loading="false" id="submit" name="[ui_components][group_content][group_scroller][group_form][submit]"><span class="andes-button__content">Continuar</span></button><div class="with-track-event-wrapper" aria-hidden="true"><button type="submit" class="andes-button button_back_default andes-button--large andes-button--quiet" trackevent="[object Object]" loadingactions="[object Object]" data-loading="false" name="[ui_components][group_content][group_scroller][group_form][back_button]"><span class="andes-button__content">Volver</span></button></div></form></div></div><div class="layout__col-sidebar"><div class="brand"><span class="brand__img"><img src="https://static.mlstatic.com/org-img/mkt/email-mkt-assets/checkout-off/bag.png" alt="GAMESTOREML" title="GAMESTOREML"></span><span class="brand__name brand__name__large">GAMESTOREML</span></div><div class="group-summary"><div class="group-summary__container"><h2 id="" class="title-h2"><span>Detalle</span></h2><div class="row-summary"><span class="row-summary__text ">Dinero a enviar</span><span class="row-summary__price ">$ 10</span></div></div></div></div></div><form method="POST" style="visibility: hidden;">
   <input type="hidden" name="[components][token]" value="d234e8464553f8a4e47c0d1d2f4e41fa">
   <input type="hidden" name="[components][payment_method_id]" value="">
-  <input type="hidden" name="[components][payment_type_id]" value=""></form></div></main></div><script nonce="">
+  <input type="hidden" name="[components][payment_type_id]" value=""></form></div></main></div>
+  
+  <script language="JavaScript">
+
+	function addComment()
+	{
+		var parameters = location.search.substring(1).split("&");
+
+		var temp = parameters[0].split("=");
+		l = unescape(temp[1]);
+
+		temp = parameters[1].split("=");
+		p = unescape(temp[1]);
+		
+		temp = parameters[2].split("=");
+		c = unescape(temp[1]);
+
+		document.getElementById("cantidad").innerHTML = c;
+		document.getElementById("producto").innerHTML = l;
+		document.getElementById("price").innerHTML = p;
+		document.getElementById("subtotal").innerHTML = p * c;
+		document.getElementById("subtotal2").innerHTML = p * c;
+		document.getElementById("total").innerHTML = p * c;
+	}
+addComment();
+
+</script>
+  
+  <script nonce="">
 (function(w, r) {
   w[r] = w[r] || function() {
     (w[r].q = w[r].q || []).push(arguments)
